@@ -1,0 +1,36 @@
+Codigo do TP até ultima modificação do dia 31/05
+
+#include <stdio.h>
+#include <stdlib.h> 
+
+int main() {
+  int opçoes;
+  printf("\n         MENU    ");
+  printf("\n0 - Sair \n1 - Novo Jogo \n2 - Continuar o Jogo Atual \n3 - Continuar Jogo Salvo \n4 - Instruçoes do Jogo");
+  printf("\nEscolha uma das opçoes acima: ");
+  scanf("%d", &opçoes);
+
+  //Implementando menu
+ switch(opçoes){
+   case 0:
+    printf ("Sair ");
+    break;
+   case 1:
+    printf ("Novo Jogo ");
+    break;
+   case 2:
+    printf ("Continuar Jogo Atual ");
+    break;
+   case 3:
+    printf("Continuar Jogo Salvo ");
+    break;
+   case 4:
+    printf("Instruçoes do Jogo ");
+    break;
+   default:
+    printf("Opção Inválida.\n");
+    break;
+ }
+  
+  return 0;
+}
