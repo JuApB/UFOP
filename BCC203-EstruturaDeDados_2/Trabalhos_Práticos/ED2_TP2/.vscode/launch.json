@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug ordena",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/Debug/ordena",
+      // "args": ["1", "471705", "3", "-P", ">", "saida.txt"],
+      // quantidade: 100, 1000, 10000, 100000, 471705
+      // situaao: 1, 2, 3
+      // metodo: 1, 2, 3
+      "args": ["3", "100", "3"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/bin/Debug",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set disassembly-flavor intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ],
+  "compounds": []
+}

@@ -1,0 +1,17 @@
+# Ignora arquivos sem nenhuma extensao, exceto o Makefile
+*
+!*/
+!*.*
+!Makefile
+
+# Ignora arquivos com a extensao .bin
+*.bin
+
+# Ignora arquivos com o nome build em qualquer nivel de diretorio
+**/build/
+
+#ignora .vscode
+.vscode/
+
+# Ignora arquivos .txt
+*.txt
